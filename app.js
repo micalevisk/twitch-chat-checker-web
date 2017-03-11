@@ -1,22 +1,18 @@
 // DEBUG=twitch-chat-checker:* npm start
 // DEBUG=twitch-chat-checker:* nodemon bin/www
-let express         = require('express');
-let path            = require('path');
-let logger          = require('morgan');
-let bodyParser      = require('body-parser');
+let express    = require('express');
+let path       = require('path');
+let bodyParser = require('body-parser');
 
 // routes
 let home  = require('./routes/home');
-
-
 
 let app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+app.set('view engine', 'pug');
 
-// app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
