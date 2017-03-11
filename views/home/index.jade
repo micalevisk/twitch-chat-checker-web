@@ -1,0 +1,67 @@
+extends ../layout
+
+block header
+	link(rel='stylesheet', type='text/css', href='stylesheets/formstyle.css')
+	link(rel='stylesheet', type='text/css', href='stylesheets/alertstyle.css')
+	script(language='javascript', type='text/javascript', src='javascripts/script.js')
+	script(language='javascript', type='text/javascript', src='javascripts/libraries/shortcut.min.js')
+
+block content
+	div#mainform.form-style
+		ul
+			li
+				label(for='username') Usuário
+				input#username(autofocus='', required='', type='text', name='username', autocomplete="off", autocorrect="off", spellcheck="false", title="alt+1")
+				span digite o nome do usuário a ser consultado
+			li
+				label(for='canais') Canais
+				textarea#canais(required='', name='canais', onkeyup='adjust_textarea(this)', autocomplete="off", autocorrect="off", spellcheck="false", title="alt+2")
+				span um nome por linha
+			li
+				//- img(src='images/loading.gif')
+				input#btnsubmit(type='submit', value='Verificar', title="alt+3")
+
+		div#_youtubeplayer
+	
+
+//-  http://html2jade.org/
+	html
+	head
+		title= title
+		meta(charset='UTF-8')
+		link(rel='stylesheet', type='text/css', href='stylesheets/formstyle.css')
+		script(language='javascript', type='text/javascript', src='javascripts/script.js')
+		script(language='javascript', type='text/javascript', src='javascripts/libraries/p5.js')
+		//- script(language='javascript', type='text/javascript', src='javascripts/libraries/p5.dom.js')
+		
+	//-
+		form.form-style(action='api/<<<<<<<<<<<<<<<<<<<<<', method='POST')
+		ul
+			li
+				label(for='word') Word *
+				input#word(type='text', name='word', required='')
+				span Enter the word
+			li
+				label(for='score') Score *
+				input#score(type='number', name='score', required='')
+				span Enter the word score (eg: 12)
+			li
+				input(type='submit', value='Verificar')
+
+	//- form.form-style(action='api/<<<<<<<<<<<<<<<<<<<<<', method='POST')
+	body
+		div.form-style
+			ul
+				li
+					label(for='username') Usuário
+					input#username(type='text', name='username', required='')
+					span digite o nome do usuário a ser consultado
+				li
+					label(for='canais') Canais
+					textarea#canais(name='canais', onkeyup='adjust_textarea(this)' required='')
+					span um canal por linha
+				li
+					input#btnsubmit(type='submit', value='Verificar', onclick='checkUser()')
+	
+		footer
+			&copy; 2017 kempzbr				

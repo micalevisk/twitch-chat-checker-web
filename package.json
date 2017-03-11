@@ -1,0 +1,21 @@
+{
+  "name": "twitch-chat-checker",
+  "productName": "Twitch Chat Checker",
+  "version": "1.0.1",
+  "description": "Verifica se um usuário está online em chats de canais da Twitch Tv",
+  "main": "./bin/www",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.16.0",
+    "express": "~4.14.1",
+    "jade": "~1.11.0",
+    "method-override": "^2.3.7",
+    "morgan": "~1.7.0",
+    "requestify": "^0.2.5"
+  },
+  "devDependencies": {
+    "debug": "^2.6.2"
+  }
+}
