@@ -3,7 +3,8 @@
 [![Dependency Status](https://dependencyci.com/github/micalevisk/twitch-chat-checker-web/badge)](https://dependencyci.com/github/micalevisk/twitch-chat-checker-web)
 
 # Twitch Chat Checker (web version)
-demo: [https://twitch-chat-checker.herokuapp.com/](https://twitch-chat-checker.herokuapp.com/)
+**"Free app running time quota exhausted"**
+<del>demo: [https://twitch-chat-checker.herokuapp.com/](https://twitch-chat-checker.herokuapp.com/)</del>
 
 
 
