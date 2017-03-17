@@ -69,5 +69,5 @@ curl -X GET https:/twitch-chat-checker.herokuapp.com/kempzbr/on/mydopefish
 ## Browser Support
 
 | <img src="http://raphamorim.io/assets/images/browser-support/chrome.png" width="100px" height="100px" alt="Chrome logo"> | <img src="http://raphamorim.io/assets/images/browser-support/firefox.png" width="100px" height="100px" alt="Firefox logo"> | <img src="http://raphamorim.io/assets/images/browser-support/ie.png" width="100px" height="100px" alt="Internet Explorer logo"> |
-|:---:|:---:|:---:|:---:|:---:|
-| 35+ ✔ | 38+ ✔ | 9+ ✔ | 29+ ✔ |  8+ ✔ |
+|:---:|:---:|:---:|
+| 35+ ✔ | 38+ ✔ | 9+ ✔ |
