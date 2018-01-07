@@ -9,8 +9,17 @@
 ![page preview](preview.png)
 
 
+## Emulate the behavior
+Using **cURL** and [jq](https://stedolan.github.io/jq) on bash, just run this:
+```bash
+channel="<CHANNEL-TO-CHECK>" #
+username="<USER-TO-CHECK>"   #
+curl -s "http://tmi.twitch.tv/group/user/${channel}/chatters" |
+jq ".chatters | flatten | contains([\"${username}\"])"
+```
+
 # API usage _(offline)_
-> URL [twitch-chat-checker.herokuapp.com/](https://twitch-chat-checker.herokuapp.com/)~
+> URL ~~[twitch-chat-checker.herokuapp.com/](https://twitch-chat-checker.herokuapp.com/)~~
 
 | Endpoint            | Description |
 | ------------------- | ----------- |
